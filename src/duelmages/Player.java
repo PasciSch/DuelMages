@@ -13,7 +13,7 @@ public class Player implements IPlayer
     public Player()
     {
         this.health = STARTHEALTH;
-        this.cards = new ArrayList<ICard>();
+        this.cards = new ArrayList<>();
     }
     
     @Override
