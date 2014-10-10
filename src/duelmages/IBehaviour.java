@@ -1,5 +1,7 @@
 package duelmages;
 
+import duelmages.Element;
+import duelmages.IPlayer;
 import java.util.List;
 
 public interface IBehaviour
@@ -16,9 +18,9 @@ public interface IBehaviour
     
     void setAttack(int attack);
     
-    void deploy(List<IBehaviour> opposingBehaviours, IPlayer opposingPlayer);
+    void deploy(List<IBehaviour> ownBehaviours, List<IBehaviour> opposingBehaviours, IPlayer ownPlayer, IPlayer opposingPlayer);
     
-    void act(List<IBehaviour> opposingBehaviours, IPlayer opposingPlayer);
+    void act(List<IBehaviour> ownBehaviours, List<IBehaviour> opposingBehaviours, IPlayer ownPlayer, IPlayer opposingPlayer);
     
     boolean isFinished();
     
